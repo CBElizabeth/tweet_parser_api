@@ -1,7 +1,9 @@
-require 'sinatra'
-require 'dotenv'
+require "sinatra"
+require "dotenv"
 Dotenv.load
 
-get '/parse' do
-	#Parse zee tweets!
+require "./parser.rb"
+
+get "/parse" do
+	Parser.new
 end
