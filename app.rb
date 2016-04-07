@@ -5,5 +5,6 @@ Dotenv.load
 require "./parser.rb"
 
 get "/parse" do
-	Parser.new
+	parser = Parser.new
+	parser.twitter_test
 end
